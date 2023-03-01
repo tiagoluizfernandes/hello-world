@@ -1,7 +1,7 @@
 package br.com.tts.helloworld.controller;
 
-import br.com.tts.helloworld.entity.HelloWorldEntity;
-import br.com.tts.helloworld.service.HelloWorldService;
+import br.com.tts.helloworld.entity.HelloWorldHubEntity;
+import br.com.tts.helloworld.service.HelloWorldHubService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,12 +17,12 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/hello")
 @RequiredArgsConstructor
-public class HelloWorldController {
+public class HelloWorldHubController {
 
-    private final HelloWorldService  helloWorldService;
+    private final HelloWorldHubService helloWorldService;
 
     @GetMapping()
-    public List<HelloWorldEntity> findAll(){
+    public List<HelloWorldHubEntity> findAll(){
         return helloWorldService.findAll();
 
     }

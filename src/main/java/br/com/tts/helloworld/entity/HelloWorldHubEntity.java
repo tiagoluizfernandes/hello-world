@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Builder
 @Data
-public class HelloWorldEntity {
+public class HelloWorldHubEntity {
     private Long id;
     private String description;
 }
