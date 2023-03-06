@@ -7,7 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HelloWorldHubApplication {
 
 	public static void main(String[] args) {
+
+
+		//System.out.println(" ".isBlank()); //true
 		SpringApplication.run(HelloWorldHubApplication.class, args);
+
+
+
 	}
 
 }
